@@ -1,0 +1,35 @@
+plugin.tx_godsgvoclient_cookieconsentmodal {
+    view {
+        # cat=plugin.tx_godsgvoclient_cookieconsentmodal/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:go_dsgvoclient/Resources/Private/Templates/
+        # cat=plugin.tx_godsgvoclient_cookieconsentmodal/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:go_dsgvoclient/Resources/Private/Partials/
+        # cat=plugin.tx_godsgvoclient_cookieconsentmodal/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:go_dsgvoclient/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_godsgvoclient_cookieconsentmodal//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}
+plugin.tx_godsgvoclient_report {
+    view {
+        # cat=plugin.tx_godsgvoclient_report/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:go_dsgvoclient/Resources/Private/Templates/
+        # cat=plugin.tx_godsgvoclient_report/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:go_dsgvoclient/Resources/Private/Partials/
+        # cat=plugin.tx_godsgvoclient_report/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:go_dsgvoclient/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_godsgvoclient_report//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}
+
+plugin.tx_godsgvoclient_godsgvoclient {
+    settings {
+        # cat=plugin.tx_godsgvoclient_godsgvoclient/; type=string; label=Dashboard Base Url
+        dashboardBaseUrl = https://dashboard.gosign.de/
+    }
+}
